@@ -1,9 +1,11 @@
-package org.example.quince.admin.metrics;
+package org.example.quince.admin.metrics.registry.table;
 
 import io.micrometer.core.instrument.Gauge;
+import io.micrometer.core.instrument.ImmutableTag;
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Tag;
 import io.micrometer.core.instrument.binder.MeterBinder;
+import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 
 import java.util.ArrayList;
@@ -20,19 +22,9 @@ public class TableMetrics implements MeterBinder {
     private final Number value;
 
     @Override
-    public void bindTo(MeterRegistry registry) {
+    public void bindTo(@NonNull MeterRegistry registry) {
         List<Tag> tags = new ArrayList<>(rowData.size());
-        rowData.forEach((s, s2) -> tags.add(new Tag() {
-            @Override
-            public String getKey() {
-                return s;
-            }
-
-            @Override
-            public String getValue() {
-                return s2;
-            }
-        }));
+        rowData.forEach((s, s2) -> tags.add(new ImmutableTag(s, s2)));
         Gauge.builder(tableName, () -> value).tags(tags)
                 .register(registry);
     }

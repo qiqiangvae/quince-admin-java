@@ -1,4 +1,4 @@
-package org.example.quince.admin.metrics.registry;
+package org.example.quince.admin.metrics.registry.table;
 
 import io.micrometer.core.instrument.config.validate.Validated;
 import io.micrometer.core.instrument.step.StepRegistryConfig;

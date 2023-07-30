@@ -1,4 +1,4 @@
-package org.example.quince.admin.metrics.registry;
+package org.example.quince.admin.metrics.registry.table;
 
 import lombok.Data;
 import lombok.Getter;

@@ -1,7 +1,6 @@
-package org.example.quince.admin.metrics.registry;
+package org.example.quince.admin.metrics.registry.table;
 
 import io.micrometer.core.instrument.Clock;
-import org.example.quince.admin.metrics.TableMetricsPusher;
 import org.springframework.boot.actuate.autoconfigure.metrics.CompositeMeterRegistryAutoConfiguration;
 import org.springframework.boot.actuate.autoconfigure.metrics.MetricsAutoConfiguration;
 import org.springframework.boot.actuate.autoconfigure.metrics.export.ConditionalOnEnabledMetricsExport;

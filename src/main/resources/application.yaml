@@ -5,7 +5,7 @@ management:
   metrics:
     export:
       table:
-        enabled: false
+        enabled: true
         url: http://localhost:8080
         step: 2s
       influx:

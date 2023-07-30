@@ -1,6 +1,6 @@
 package org.example.quince.admin;
 
-import org.example.quince.admin.metrics.registry.TableMetricsExportAutoConfiguration;
+import org.example.quince.admin.metrics.registry.table.TableMetricsExportAutoConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

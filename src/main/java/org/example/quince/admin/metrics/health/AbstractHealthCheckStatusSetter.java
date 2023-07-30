@@ -1,4 +1,6 @@
-package org.example.quince.admin.metrics;
+package org.example.quince.admin.metrics.health;
+
+import org.example.quince.admin.metrics.health.HealthMetrics;
 
 import javax.annotation.PostConstruct;
 import java.util.concurrent.ScheduledExecutorService;

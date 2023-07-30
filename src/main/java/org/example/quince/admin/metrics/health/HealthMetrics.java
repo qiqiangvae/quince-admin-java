@@ -1,4 +1,4 @@
-package org.example.quince.admin.metrics;
+package org.example.quince.admin.metrics.health;
 
 
 import io.micrometer.core.instrument.Gauge;

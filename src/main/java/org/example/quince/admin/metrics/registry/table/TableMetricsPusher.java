@@ -1,10 +1,8 @@
-package org.example.quince.admin.metrics;
+package org.example.quince.admin.metrics.registry.table;
 
 import com.google.common.collect.ImmutableMap;
 import lombok.RequiredArgsConstructor;
 import lombok.val;
-import org.example.quince.admin.metrics.TableMetrics;
-import org.example.quince.admin.metrics.registry.TableMeterRegistry;
 import org.springframework.boot.actuate.autoconfigure.metrics.export.ConditionalOnEnabledMetricsExport;
 import org.springframework.stereotype.Component;
 
