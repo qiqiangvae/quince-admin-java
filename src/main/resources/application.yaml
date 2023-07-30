@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: influx_demo
+management:
+  metrics:
+    export:
+      table:
+        enabled: false
+        url: http://localhost:8080
+        step: 2s
+      influx:
+        db: dev_bucket
+        uri: http://localhost:8086
+        user-name: quince
+        password: root1234
+        enabled: false
+        org: dev
+        token: JWQPibup8sLIAwWffqk_7LBasiSbBhybSzTOcvePUVqmaYkpicFlltZ_qrZBk1hebzE706XsXWxWovMIgq0A_w==
+        step: 2s
+    tags:
+      app: ${spring.application.name}
+    web:
+      server:
+        request:
+          autotime:
+            enabled: true
+server:
+  port: 8081
